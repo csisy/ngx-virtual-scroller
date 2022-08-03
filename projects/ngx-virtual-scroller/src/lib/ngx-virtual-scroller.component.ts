@@ -318,12 +318,12 @@ export class VirtualScrollerComponent implements OnInit, OnChanges, OnDestroy {
     this.addScrollEventHandlers();
   }
 
-  protected _items: any[] = [];
+  protected _items: ReadonlyArray<any> = [];
   @Input()
-  public get items(): any[] {
+  public get items(): ReadonlyArray<any> {
     return this._items;
   }
-  public set items(value: any[]) {
+  public set items(value: ReadonlyArray<any>) {
     if (value === this._items) {
       return;
     }

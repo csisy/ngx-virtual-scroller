@@ -1,9 +1,10 @@
 dist/
 node_modules/
+.angular/
 *.log
 /compiled
 *.map.js
 *.js
 /src/**/*.js
-ngx-virtual-scroller-*.tgz
+*ngx-virtual-scroller-*.tgz
 !docs/**/*
